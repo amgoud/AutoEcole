@@ -38,7 +38,7 @@ public class AdminAdministrateurController {
 // test mohammed
 	 model.addAttribute("administrateur", new Administrateur());
 	 model.addAttribute("ListeAdministrateurs",administrateurMetier.findAll());
-zaer
+zaerzae
 	 return "home";
 	 }
 
