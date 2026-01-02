@@ -34,6 +34,7 @@ public class AdminAdministrateurController {
 
 	 @RequestMapping(value = "/indexHome")
 	 public String indexHome(Model model) {
+//test
 // test mohammed
 	 model.addAttribute("administrateur", new Administrateur());
 	 model.addAttribute("ListeAdministrateurs",administrateurMetier.findAll());
