@@ -32,14 +32,14 @@ public class AdminAdministrateurController {
 	@Autowired
 	private AdministrateurMetier administrateurMetier;
 
-	// @RequestMapping(value = "/indexHome")
-	// public String indexHome(Model model) {
-	//
-	// //model.addAttribute("administrateur", new Administrateur());
-	// //model.addAttribute("ListeAdministrateurs",administrateurMetier.findAll());
-	//
-	// return "home";
-	// }
+	 @RequestMapping(value = "/indexHome")
+	 public String indexHome(Model model) {
+
+	 model.addAttribute("administrateur", new Administrateur());
+	 model.addAttribute("ListeAdministrateurs",administrateurMetier.findAll());
+
+	 return "home";
+	 }
 
 	@RequestMapping(value = "/index")
 	public String index(Model model) {
